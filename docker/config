@@ -1,0 +1,16 @@
+port: 8080
+hostname: email
+smtpport: 25
+user:
+password:
+mailSsl: false
+smtpPort: 25
+serverHostname: http://localhost/submitit
+mailFrom: connect@trondheimdc.no
+mailBcc: connect@trondheimdc.no
+emsSubmitTalk: http://ems-app:8081/server/events/1f876502-d3c3-44f6-8ea3-a4d0e16331dd/sessions
+emsUser: submitit.redux
+emsPassword: EMS password
+photoCopyDir: /tmp/photo
+closing-time: 20161231121212
+close-password: pass
