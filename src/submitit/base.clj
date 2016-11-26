@@ -24,6 +24,12 @@
     (java.lang.System/getProperty valkey)
   )))
 
+(defn read-system-enviroment-val-default [valkey default]
+  (let [filen (java.lang.System/getenv valkey)]
+  (if (and filen (not= filen "")) filen
+    (java.lang.System/getProperty valkey default)
+  )))
+
 (defn get-setup-filename []
   (read-system-enviroment-val "SUBMITIT_SETUP_FILE"))
 
@@ -35,7 +41,7 @@
       (.load props (io/reader file))
       (into {}
         (for [[k v] props]
-          [(keyword k) v]))) 
+          [(keyword k) (read-system-enviroment-val-default k v)])))
       ;;(hash-map (map (fn [kv] [(keyword (key kv)) (val kv)]) props)))
     (timbre/trace "Did not find setupfile. Use 'lein run <setupfile> <mailaddress>' or set enviroment variable SUBMITIT_SETUP_FILE."))))
 
