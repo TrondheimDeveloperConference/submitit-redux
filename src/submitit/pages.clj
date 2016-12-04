@@ -238,7 +238,7 @@
   (POST "/addTalk" {body :body session :session} (add-talk (parse-string (slurp body)) session))
   (GET "/talkJson/:talkid"  request (json-talk ((request :route-params) :talkid)))
   (GET "/needPassword" [] (generate-string {:needPassword (need-submit-password?)}))
-  (GET "/status" [] (status-page))
+  ;(GET "/status" [] (status-page))
   (GET "/uploadPicture" request (upload-picture request))
   (POST "/addPic" request (add-picture (mp/multipart-params-request request)))
   (GET "/speakerPhoto" request (speaker-photo request))
