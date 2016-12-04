@@ -14,4 +14,3 @@ emsPassword: EMS password
 photoCopyDir: /tmp/photo
 closing-time: 20161231121212
 close-password: pass
-loglevel: trace
