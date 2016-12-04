@@ -220,7 +220,9 @@
   ))
 
 (defroutes main-routes
-  (GET "/" [] (response-util/resource-response "index.html" {:root "public"}))
+  (GET "/" [] (response-util/content-type
+                (response-util/resource-response "index.html" {:root "public"})
+                "text/html; charset=utf-8"))
   (GET "/newSpeakerId" [] (new-speaker-id))
   (GET "/tagCollection" [] (generate-string (tag-list)))
   (GET "/loadCaptcha" {session :session} (load-captcha session))
@@ -234,10 +236,11 @@
   (GET "/speakerPhoto" request (speaker-photo request))
   (GET "/tempPhoto" request (temp-photo request))
   (GET "/savedPic" request (saved-picture request))
-  (GET "/talkDetail" [] (response-util/resource-response "talkDetail.html" {:root "public"}))
+  (GET "/talkDetail" [] (response-util/content-type
+                          (response-util/resource-response "talkDetail.html" {:root "public"})
+                          "text/html; charset=utf-8"))
   (route/resources "/")
-  (route/not-found {:status 404 :body "404 Not Found"})
-  )
+  (route/not-found {:status 404 :body "404 Not Found"}))
 
 
 (defn start-jetty []
