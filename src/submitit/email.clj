@@ -26,7 +26,7 @@
       (.setHostName (read-setup :hostname))
       (.setSslSmtpPort (read-setup :smtpport))
       (.setSSL true)
-      (.setFrom (read-setup :mailFrom) "Javazone program commitee")
+      (.setFrom (read-setup :mailFrom) "Trondheim Developer Conference program commitee")
       (.setSubject subject)
       (.setAuthentication (read-setup :user) (read-setup :password))
       (.setMsg message)

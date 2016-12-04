@@ -6,7 +6,7 @@ Thank you for submitting your presentation titled "%title%".
 
 Best regards,
 
-Trondheim Developer Conference Programme Committee
+Trondheim Developer Conference Program Committee
 connect@trondheimdc.no
 
 
