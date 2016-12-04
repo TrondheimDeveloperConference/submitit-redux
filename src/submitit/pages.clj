@@ -219,16 +219,6 @@
 
   ))
 
-
-
-(defn redir-talk-detail [request]
-  (let [talkid (((ring-params/params-request request) :query-params) "talkid")]
-    (if talkid
-    (response-util/redirect (str "talkDetail.html?talkid=" talkid))
-    (response-util/redirect "talkDetail.html"))
-  ))
-
-
 (defroutes main-routes
   (GET "/" [] (response-util/resource-response "index.html" {:root "public"}))
   (GET "/newSpeakerId" [] (new-speaker-id))
@@ -244,7 +234,7 @@
   (GET "/speakerPhoto" request (speaker-photo request))
   (GET "/tempPhoto" request (temp-photo request))
   (GET "/savedPic" request (saved-picture request))
-  (GET "/talkDetail" request (redir-talk-detail request))
+  (GET "/talkDetail" [] (response-util/resource-response "talkDetail.html" {:root "public"}))
   (route/resources "/")
   (route/not-found {:status 404 :body "404 Not Found"})
   )
