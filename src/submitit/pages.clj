@@ -134,10 +134,9 @@
     [:body
      (if message [:p message])
      [:form {:method "POST" :action "addPic" :enctype "multipart/form-data"}
-      [:input {:type "file" :name "file" :id "filehandler" :required "required"}]
+      [:input {:type "file" :name "file" :id "filehandler" :required "required" :onchange "javascript:this.form.submit();"}]
       [:input {:type "hidden" :value speaker-key :name "speakerKey" :id "speakerKey"}]
       [:input {:type "hidden" :value dummy-key :name "dummyKey" :id "dummyKey"}]
-      [:input {:type "submit" :value "Upload File"}]
       ]]]))
 
 (defn upload-picture [request]
