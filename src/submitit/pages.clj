@@ -230,7 +230,7 @@
 
 
 (defroutes main-routes
-  (GET "/" [] (response-util/redirect "index.html"))
+  (GET "/" [] (response-util/resource-response "index.html" {:root "public"}))
   (GET "/newSpeakerId" [] (new-speaker-id))
   (GET "/tagCollection" [] (generate-string (tag-list)))
   (GET "/loadCaptcha" {session :session} (load-captcha session))
