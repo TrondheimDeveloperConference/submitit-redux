@@ -1,6 +1,6 @@
-(ns submitit.pages 
-  (:use 
-    [submitit.base]    
+(ns submitit.pages
+  (:use
+    [submitit.base]
     [submitit.cj]
     [submitit.core]
     [submitit.email]
@@ -107,18 +107,22 @@
 
 
 (defn status-page []
-  (let [setupfile (get-setup-filename)]
+  (if (= "true" (read-setup :statusEnabled))
+    (let [setupfile (get-setup-filename)]
+      (html
+        [:body
+         [:h1 "Status"]
+         [:p (str "EnvFile: '" setupfile "'")]
+         [:hr]
+         (if (and setupfile (.exists (io/file setupfile)))
+           [:pre (setup-str )]
+           [:p "Could not find setupfile"])
+         [:hr]
+         [:pre (reduce (fn[a b] (str a "\n" b)) (java.lang.System/getProperties))]
+         ]))
     (html
       [:body
-       [:h1 "Status"]
-       [:p (str "EnvFile: '" setupfile "'")]
-       [:hr]
-       (if (and setupfile (.exists (io/file setupfile)))
-         [:pre (setup-str )]
-         [:p "Could not find setupfile"])
-       [:hr]
-       [:pre (reduce (fn[a b] (str a "\n" b)) (java.lang.System/getProperties))]
-       ])))
+       [:h1 "Disabled"]])))
 
 
 
@@ -230,7 +234,7 @@
   (POST "/addTalk" {body :body session :session} (add-talk (parse-string (slurp body)) session))
   (GET "/talkJson/:talkid"  request (json-talk ((request :route-params) :talkid)))
   (GET "/needPassword" [] (generate-string {:needPassword (need-submit-password?)}))
-  ;(GET "/status" [] (status-page))
+  (GET "/status" [] (status-page))
   (GET "/uploadPicture" request (upload-picture request))
   (POST "/addPic" request (add-picture (mp/multipart-params-request request)))
   (GET "/speakerPhoto" request (speaker-photo request))
