@@ -119,6 +119,7 @@
            [:p "Could not find setupfile"])
          [:hr]
          [:pre (reduce (fn[a b] (str a "\n" b)) (java.lang.System/getProperties))]
+         [:pre (reduce (fn[a b] (str a "\n" b)) (java.lang.System/getenv))]
          ]))
     (html
       [:body
