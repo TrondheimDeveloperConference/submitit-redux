@@ -208,14 +208,14 @@
 (defn submit-open? [talk]
   (or 
     (talk "addKey")
-    (let [close-time (read-setup :closing-time)]
+    (let [close-time (read-setup :closingTime)]
       (or (nil? close-time)
       (> 0 (.compareTo (time-now) close-time))
       ))
-    (= (read-setup :close-password) (talk "password"))))
+    (= (read-setup :closePassword) (talk "password"))))
 
 (defn need-submit-password? []
-  (let [close-time (read-setup :closing-time)]
+  (let [close-time (read-setup :closingTime)]
     (and (not (nil? close-time)) (< 0 (.compareTo (time-now) close-time)))))
 
 (defn illegal-keywords? [keywords]

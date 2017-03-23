@@ -33,8 +33,8 @@ property=value
 * emsUser: User to use ems
 * emsPassword: Password to ems
 * photoCopyDir: If present a copy of all photos will be copied here
-* closing-time: The date call for speakers will be closed and a password will be required to submit a new proposal. Date format yyyyMMddHHmmss
-* close-password: The password required to submit new talks after the deadline
+* closingTime: The date call for speakers will be closed and a password will be required to submit a new proposal. Date format yyyyMMddHHmmss
+* closePassword: The password required to submit new talks after the deadline
 
 
 ## Frontend developer mode
