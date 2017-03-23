@@ -9,8 +9,6 @@ Best regards,
 Trondheim Developer Conference Program Committee
 connect@trondheimdc.no
 
-
-
 The following has been registered:
 
 Format: %presentationType%

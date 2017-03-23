@@ -32,73 +32,6 @@
 	{
 	  "value": "BigData",
 	  "checked": false
-	},
-	{
-	  "value": "React",
-	  "checked": false
-	}
-      ]
-    },
-    {
-      "value": "Java platforms",
-      "description": "Talks about aspects on the different java platforms (SE, ME, EE), jvm langugages, performance or other java core topics.",
-      "checked": false,
-      "tags": [
-	{
-	  "value": "Core Java",
-	  "checked": false
-	},
-	{
-	  "value": "Memory",
-	  "checked": false
-	},
-	{
-	  "value": "APIs",
-	  "checked": false
-	},
-	{
-	  "value": "Performance",
-	  "checked": false
-	},
-	{
-	  "value": "Java SE",
-	  "checked": false
-	},
-	{
-	  "value": "Java EE",
-	  "checked": false
-	},
-	{
-	  "value": "Java ME",
-	  "checked": false
-	},
-	{
-	  "value": "Scala",
-	  "checked": false
-	},
-	{
-	  "value": "Clojure",
-	  "checked": false
-	},
-	{
-	  "value": "Functional",
-	  "checked": false
-	},
-	{
-	  "value": "Security",
-	  "checked": false
-	},
-	{
-	  "value": "IoT",
-	  "checked": false
-	},
-	{
-	  "value": "BigData",
-	  "checked": false
-	},
-	{
-	  "value": "React",
-	  "checked": false
 	}
       ]
     },
@@ -107,6 +40,14 @@
       "description": "Talks about (Big) Data, Integration, Server, Cloud, NoSQL",
       "checked": false,
       "tags": [
+	{
+	  "value": "Java/JVM",
+	  "checked": false
+	},
+	{
+	  "value": "C#/.Net",
+	  "checked": false
+	},
 	{
 	  "value": "Integration",
 	  "checked": false
@@ -133,10 +74,6 @@
 	},
 	{
 	  "value": "BigData",
-	  "checked": false
-	},
-	{
-	  "value": "React",
 	  "checked": false
 	}
       ]
@@ -216,10 +153,6 @@
 	{
 	  "value": "BigData",
 	  "checked": false
-	},
-	{
-	  "value": "React",
-	  "checked": false
 	}
       ]
     },
@@ -276,7 +209,7 @@
 	  "checked": false
 	},
 	{
-	  "value": "React",
+	  "value": "Machine learning",
 	  "checked": false
 	}
       ]

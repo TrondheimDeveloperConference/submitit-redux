@@ -70,7 +70,7 @@
 
     <div class="jumbotron container">
       <h1>Got something to say? Trondheim Developer Conference is the place to say it!</h1>
-      <p>Trondheim Developer Conference takes place in Trondheim, Norway, on october 30, 2017. The conference offers a combination of technical talks and workshops in an informal atmosphere with an expected attendance of more than 600 developers.</p>
+      <p>Trondheim Developer Conference takes place in Trondheim, Norway, on october 30, 2017. The conference offers technical talks in an informal atmosphere with an expected attendance of more than 600 developers.</p>
     </div>
 
     <div class="section container cf">
@@ -80,8 +80,10 @@
           <p class="explanation"><strong>Submitting: </strong> Once you have submitted your talk you will receive a confirmation by email. In this email you'll find a link to a page where you can further update your submission should you wish.</p>
           <p class="explanation"><strong>Publication:</strong> The information given in this form will be published in the program, unless specifically stated otherwise.</p>
           <p class="explanation"><strong>Language:</strong> Please complete this form using the same language that you'll be presenting in. In other words, if you plan on presenting in Norwegian, skriv p&aring; norsk!</p>
-          <p class="explanation"><strong>Deadline:</strong> The deadline for submissions is June 30 2016, but feel free to submit your talk early :-)</p>
+          <p class="explanation"><strong>Deadline:</strong> The deadline for submissions is June 1 2017, but feel free to submit your talk early :-)</p>
+          <p class="explanation"><strong>Accepted speakers notified:</strong> Speakers whos talks are accepted will be notified by tuesday august 21th.</p>
           <p class="explanation"><strong>Format:</strong> All talks are in the 30 minute format</p>
+          <p class="explanation"><strong>Code of conduct:</strong> All attendees, speakers, partners, staff and volunteers at our conference are required to follow the <a href="https://trondheimdc.no/code-of-conduct">code of conduct</a>.</p>
         </div>
       </div>
     </div>
@@ -95,7 +97,7 @@
           <div class="section-content">
             <div class="input-section">
               <h4 class="first">You need a password</h4>
-              <p class="help">The Call for Speakers is now closed. However if you have a brilliant idea for a presentation or workshop we might make an exception. Contact us at <a href="mailto:program@java.no">program@java.no</a> and we will consider your case.</p>
+              <p class="help">The Call for Speakers is now closed. However if you have a brilliant idea for a presentation or workshop we might make an exception. Contact us at <a href="mailto:connect@trondheimdc.no">connect@trondheimdc.no</a> and we will consider your case.</p>
               <p>
                   <input type="password" required="required" class="talkInput span6" ng-model="talk.password" id="passwordInput" placeholder="Type submit password" ng-required="needPassword"/>
               </p>
@@ -188,21 +190,10 @@
                 <div class="choice">
                   <label for="presentationchoice">
                     <input type="radio" name="format" ng-model="talk.presentationType" value="presentation" id="presentationchoice" />
-                    <div class="label"><span>Presentation</span> Presentations should be no more than 60 minutes long. Aim for a 50 minute long talk, and leave 10 minutes for Q&amp;A at the end.</div>
+                    <div class="label"><span>Presentation</span> Presentations should be no more than 30 minutes long.</div>
                   </label>
                 </div>
-                <div class="choice">
-                  <label for="lightningchoice">
-                    <input type="radio" name="format" ng-model="talk.presentationType" value="lightning-talk" id="lightningchoice" />
-                    <div class="label"><span>Lightning Talk</span> Lightning Talks are no longer than 10 minutes long, including Q&amp;A.  Note that the time limit is strictly enforced!</div>
-                  </label>
-                </div>
-                <div class="choice">
-                  <label for="workshopchoice">
-                    <input type="radio" name="format" ng-model="talk.presentationType" value="workshop" id="workshopchoice" />
-                    <div class="label"><span>Workshop</span> Workshops can last 2, 4 or 8 hours. Use the "Outline" text box below to indicate the length of your workshop.</div>
-                  </label>
-                </div>
+
               </p>
             </div>
             <div class="input-section">
@@ -237,7 +228,7 @@
             </div>
             <div class="input-section">
               <h4>Tags</h4>
-              <p class="help">Please select <strong>max two tags</strong> to help the audience get a feel for what you will cover in your talk or workshop. One of these can be your custom tag if you feel our provided tags doesn't fit your talk.</p>
+              <p class="help">Please select <strong>max two tags</strong> to help the audience get a feel for what you will cover in your talk. One of these can be your custom tag if you feel our provided tags doesn't fit your talk.</p>
               <p>
                 <div class="choice" ng-repeat="atag in tagList">
                   <label>
@@ -407,11 +398,6 @@
     </div>
     <!-- END main content wrapper -->
 
-
-
-
-
-
     <!-- START success wrapper -->
     <div class="wrapper" ng-show="showResult">
 
@@ -436,12 +422,6 @@
     </div>
     <!-- END success wrapper -->
 
-
-
-
-
-
-
     <!-- START failure wrapper -->
     <div class="wrapper" ng-show="showFailure">
 
@@ -453,62 +433,7 @@
 
     </div>
     <!-- END failure wrapper -->
-
-
-
-
-
-
-
-
-
-
-
   </div>
 
-  <!-- google analytics -->
-  <!--<script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-3676724-8']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      if(window.googleAnalyticsInjected) return;
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      window.googleAnalyticsInjected = true;
-    })();
-  </script>
--->
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
