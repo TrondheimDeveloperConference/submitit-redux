@@ -143,3 +143,6 @@ input:invalid, textarea:invalid {
 .nav-item {
 	display: table-cell;
 }
+.alert-error {
+	color: red;
+}

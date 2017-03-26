@@ -118,10 +118,6 @@
 	{
 	  "value": "BigData",
 	  "checked": false
-	},
-	{
-	  "value": "React",
-	  "checked": false
 	}
       ]
     },
@@ -184,10 +180,6 @@
 	{
 	  "value": "BigData",
 	  "checked": false
-	},
-	{
-	  "value": "React",
-	  "checked": false
 	}
       ]
     },
@@ -229,11 +221,6 @@
     {
       "value": "Knowledge Practice",
       "description": "How-tos, Introductions, Technical White Papers",
-      "checked": false
-    },
-    {
-      "value": "Wisdom",
-      "description": "Experience over time, Opinions, Evangelism",
       "checked": false
     }
   ]
