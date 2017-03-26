@@ -11,14 +11,10 @@ connect@trondheimdc.no
 
 The following has been registered:
 
-Format: %presentationType%
 Title: %title%
 
 Abstract:
 %abstract%
-
-Summary:
-%highlight%
 
 Outline:
 %outline%
@@ -38,9 +34,6 @@ Category:
 
 Tags:
 %atalkTags%
-
-Type of talk:
-%selectedType%
 
 Speakers:
 %tspeakers

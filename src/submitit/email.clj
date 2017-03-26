@@ -30,6 +30,7 @@
       (.setSubject subject)
       (.setAuthentication (read-setup :user) (read-setup :password))
       (.setMsg message)
+      (.setCharset "UTF-8")
       )  
   (doto (org.apache.commons.mail.SimpleEmail.)
       (.setHostName (read-setup :hostname))
@@ -37,7 +38,8 @@
       (.setFrom (read-setup :mailFrom) (read-setup :mailFromName))
       (.setSubject subject)
       (.setMsg message)
-      )  
+      (.setCharset "UTF-8")
+      )
 
   ))
 
