@@ -239,11 +239,6 @@ angular.module('submititapp', [])
             $scope.userErrorMessage = message;
         };
 
-        if (!$scope.talk.selectedType || $scope.talk.selectedType === null || $scope.talk.selectedType === "") {
-            displayUserError("Please select a type of talk");
-            return false;
-        }
-
         if (!$scope.talk.selectedTopic || $scope.talk.selectedTopic === null || $scope.talk.selectedTopic === "") {
             displayUserError("Please select a talk topic");
             return false;
@@ -253,9 +248,6 @@ angular.module('submititapp', [])
             displayUserError("Please dont use special characters in your tag (only letters and digits)");
             return false;
         }
-
-
-        
 
         var talkTags = [];
 

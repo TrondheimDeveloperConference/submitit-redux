@@ -232,7 +232,6 @@
     (para-error? (talk "level")) "level is required"
     (para-error? (talk "outline")) "outline is required"
     (para-error? (talk "title")) "Title is required"
-    (para-error? (talk "highlight")) "highlight is required"
     (para-error? (talk "expectedAudience")) "Expected audience is required"
       (illegal-keywords? (talk "talkTags")) "Illegal characters in keyword"
     (< (count (talk "speakers")) 1) "One speaker must be added"  
