@@ -25,7 +25,8 @@
   (doto (org.apache.commons.mail.SimpleEmail.)
       (.setHostName (read-setup :hostname))
       (.setSmtpPort (Integer/parseInt (read-setup :smtpPort)))
-      (.setStartTLSEnabled true)
+      (.setSslSmtpPort (read-setup :smtpPort))
+      (.setSSL true)
       (.setFrom (read-setup :mailFrom) (read-setup :mailFromName))
       (.setSubject subject)
       (.setAuthentication (read-setup :user) (read-setup :password))
@@ -55,7 +56,7 @@
                                   (str
                                     "Error sending mail " (.getMessage e)
                                     " Host " (read-setup :hostname)
-                                    " SslSmtpPort " (read-setup :smtpPort)
+                                    " SmtpPort " (read-setup :smtpPort)
                                     " user " (read-setup :user)
                                     " mailSsl " (read-setup :mailSsl)
                                     )
