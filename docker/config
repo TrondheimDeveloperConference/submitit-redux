@@ -1,6 +1,5 @@
 port: 8080
 hostname: email
-smtpport: 25
 user:
 password:
 mailSsl: false

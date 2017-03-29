@@ -22,7 +22,6 @@ property=value
 ### The following values can be set:
 * port: Port that submitit will run on. Default is 8080
 * hostname: The hostname to the smtp server
-* smtpport: The port to the smtp server
 * user: User to logon to smtp (if any)
 * password: Password to smtp (if any)
 * mailSsl: Use ssl to connect to smtp
