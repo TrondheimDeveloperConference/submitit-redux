@@ -51,7 +51,15 @@
     (.addBcc sender (read-setup :mailBcc))
     (.send sender))
     (catch Exception e (do
-                                (timbre/error (str "Error sending mail " (.getMessage e)))
+                                (timbre/error
+                                  (str
+                                    "Error sending mail " (.getMessage e)
+                                    " Host " (read-setup :hostname)
+                                    " SslSmtpPort " (read-setup :smtpPort)
+                                    " user " (read-setup :user)
+                                    " mailSsl " (read-setup :mailSsl)
+                                    )
+                                  )
                                 (throw e))
     )))
 
