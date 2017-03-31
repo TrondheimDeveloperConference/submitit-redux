@@ -3,7 +3,7 @@
   :repositories [["central-proxy" "http://repository.sonatype.org/content/repositories/central/"]]
   :dependencies [
   	[org.clojure/clojure "1.5.1"]
-  	[org.apache.commons/commons-email "1.2"]
+  	[org.apache.commons/commons-email "1.4"]
     [commons-io "2.4"]
     [commons-codec "1.7"]
     [ring "1.3.2"]
