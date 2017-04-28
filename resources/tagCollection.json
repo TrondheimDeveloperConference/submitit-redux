@@ -79,16 +79,55 @@
       ]
     },
     {
-      "value": "Frontend",
-      "description": "Everything frontend. UX, UI, Apps, Mobile, Responsive, etc.",
+      "value": "Design",
+      "description": "Everything in and around design. Graphic, interaction, services.",
       "checked": false,
       "tags": [
+	{
+	  "value": "Graphic",
+	  "checked": false
+	},
 	{
 	  "value": "UX",
 	  "checked": false
 	},
 	{
+	  "value": "Apps",
+	  "checked": false
+	},
+	{
+	  "value": "Mobile",
+	  "checked": false
+	},
+	{
+	  "value": "Responsive Design",
+	  "checked": false
+	}
+      ]
+    },
+    {
+      "value": "Frontend",
+      "description": "Everything frontend programming. JavaScript, CSS, Browser, Devices.",
+      "checked": false,
+      "tags": [
+	{
 	  "value": "Web Technologies",
+	  "checked": false
+	},
+	{
+	  "value": "JavaScript",
+	  "checked": false
+	},
+	{
+	  "value": "Architecture",
+	  "checked": false
+	},
+	{
+	  "value": "Web APIs (WebVR, Audio, BLE)",
+	  "checked": false
+	},
+	{
+	  "value": "CSS",
 	  "checked": false
 	},
 	{
@@ -104,19 +143,11 @@
 	  "checked": false
 	},
 	{
-	  "value": "JavaScript",
-	  "checked": false
-	},
-	{
 	  "value": "Security",
 	  "checked": false
 	},
 	{
 	  "value": "IoT",
-	  "checked": false
-	},
-	{
-	  "value": "BigData",
 	  "checked": false
 	}
       ]
